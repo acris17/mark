@@ -1,0 +1,10 @@
+[package]
+name = "mark"
+version = "0.1.0"
+edition = "2024"
+description = "Manage bookmarked paths"
+
+[dependencies]
+clap = { version = "4.5.30", features = ["derive"] }
+toml = "0.8.20"
+xdg = "2.5.2"
