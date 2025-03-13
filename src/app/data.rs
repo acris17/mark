@@ -16,7 +16,7 @@ impl AppData {
         }
 
         let contents = fs::read_to_string(mark_file)?;
-        let marks = contents.parse::<Table>()?;
+        let marks = contents.parse::<Table>().unwrap_or_default();
         let app_data = AppData { marks };
 
         Ok(app_data)
